@@ -1,0 +1,23 @@
+/* Basic card look for any container div */
+div {
+  border-radius: 6px;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+/* Headings */
+h3, h2, h1 {
+  font-family: sans-serif;
+  margin-bottom: 8px;
+}
+
+/* Paragraph text */
+p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Images */
+img {
+  border-radius: 4px;
+}
