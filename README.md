@@ -5,7 +5,7 @@
 - Per Scholas Software Engineering Student
 - 2025-RTT-57
 
-# This project is part of my Lab 1 assignment for the React + TypeScript module. The goal of the lab was to build a small component library using functional components, TypeScript interfaces for props, and basic component composition.
+## This project is part of my Lab 1 assignment for the React + TypeScript module. The goal of the lab was to build a small component library using functional components, TypeScript interfaces for props, and basic component composition.
 
 # I created three UI components:
 -	AlertBox - shows different types of alert messages
