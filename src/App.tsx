@@ -50,9 +50,11 @@ const App = () => {
     <div className="p-6 space-y-6">
       
       <AlertBox type="success" message="This is a success message" />
-      <AlertBox type="error" message="This is an error message" />
+     
+     {/* i was testing  here */}
+      {/* <AlertBox type="error" message="This is an error message" />
       <AlertBox type="warning" message="This is a warning message" />
-      <AlertBox type="info" message="This is an info message" />
+      <AlertBox type="info" message="This is an info message" /> */}
 
       {/* multiple users */}
       {users.map((user) => (

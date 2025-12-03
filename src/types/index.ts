@@ -1,57 +1,41 @@
 // src/types/index.ts
 // copied from lesson component-library
 // This file contains TypeScript interfaces and types for various components in the component library.
-// 
+// i am confusing ts with react tsx syntax i need to practice more i think i am the most dumest person ever i think too much and over complicate things
 // https://ps-lms.vercel.app/curriculum/se/415/lab-1#:~:text=Component%20Implementation%3A
 // https://ps-lms.vercel.app/curriculum/se/415/lab-1#:~:text=Create%20a%20new%20React%20TypeScript%20project%20using%20Vite%3A
 // https://ps-lms.vercel.app/curriculum/se/415/lab-1#:~:text=index.ts-,Component%20Requirements,-1.%20AlertBox%20Component
 // https://ps-lms.vercel.app/curriculum/se/415/lab-1#:~:text=Component%20Requirements-,1.%20AlertBox%20Component,-Create%20an%20AlertBox
 // Type definitions for AlertBox component
+
 export type AlertType = "success" | "error" | "warning" | "info";
 
-// Props for the AlertBox component
 export interface AlertBoxProps {
   type: AlertType;
   message: string;
-  onClose?: () => void;
-  children?: React.ReactNode;
 }
-// https://ps-lms.vercel.app/curriculum/se/415/lab-1#:~:text=%7D-,2.%20UserProfileCard%20Component,-Create%20a%20UserProfileCard
 
-// Basic user information structure
+// UserProfileCard -------------
 export interface User {
   id: string;
   name: string;
   email: string;
   role: string;
-  avatarUrl?: string;
 }
 
-// Props for the UserProfileCard component
 export interface UserProfileCardProps {
   user: User;
-  showEmail?: boolean;
-  showRole?: boolean;
-  onEdit?: (userId: string) => void;
-  children?: React.ReactNode;
 }
 
-// https://ps-lms.vercel.app/curriculum/se/415/lab-1#:~:text=%7D-,3.%20ProductDisplay%20Component,-Create%20a%20ProductDisplay
-// Basic product information structure
+// ProductDisplay --------------
 export interface Product {
   id: string;
   name: string;
   price: number;
   description: string;
-  imageUrl?: string;
   inStock: boolean;
 }
 
-// Props for the ProductDisplay component
 export interface ProductDisplayProps {
   product: Product;
-  showDescription?: boolean;
-  showStockStatus?: boolean;
-  onAddToCart?: (productId: string) => void;
-  children?: React.ReactNode;
 }
