@@ -1,34 +1,35 @@
-// src/components/UserProfileCard/UserProfileCard.tsx
+// src/components/ProductDisplay/ProductDisplay.tsx
 // https://ps-lms.vercel.app/curriculum/se/415/lab-1#:~:text=Edit%20Profile-,ProductDisplay%20Example,-const%20product%20%3D
-
+// Component to display core product information
 import React from "react";
-import { UserProfileCardProps } from "../../types";
+import { ProductDisplayProps } from "../../types";
 
-
-export const UserProfileCard: React.FC<UserProfileCardProps> = ({ user }) => {
- 
- return (
+// ProductDisplay component definition
+export const ProductDisplay: React.FC<ProductDisplayProps> = ({ product }) => {
+  return (
     <div className="border rounded-md p-4">
-      
-      {/* This is the user avatar */}
-      
-      {user.avatarUrl && (
-      
-      <img
-          src={user.avatarUrl}
-
-          alt={user.name}
+      {/* only work if product.imageUrl is provided */}
+      {product.imageUrl && (
+        <img
           
-          className="w-16 h-16 rounded-full mb-3"
+        src={product.imageUrl}
+          
+          alt={product.name}
+        
+          className="w-full h-40 object-cover mb-3"
         />
       )}
 
-      <h3 className="text-lg font-semibold">{user.name}</h3>
+      <h3 className="text-lg font-semibold">{product.name}</h3>
       
-      <p className="text-sm text-gray-700">{user.email}</p>
-      
-      <p className="text-sm text-gray-500">{user.role}</p>
-    
+      <p className="text-green-600 font-bold">${product.price.toFixed(2)}</p>
+
+      <p className="text-sm text-gray-700 mt-1">{product.description}</p>
+
+      <p className="text-sm mt-1">
+        
+      {product.inStock ? "In Stock" : "Out of Stock"}
+      </p>
     </div>
   );
 };
