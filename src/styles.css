@@ -1,20 +1,17 @@
 
+h1, h2, h3, p {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+
 div {
-  border-radius: 6px;
-  padding: 10px;
-  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 12px auto;
+  max-width: 400px;
+  background: #2c2323;
 }
-
-
-h3, h2, h1 {
-  font-family: sans-serif;
-  margin-bottom: 8px;
-}
-
-p {
-  font-size: 14px;
-  color: #333;
-}
-
 
 
