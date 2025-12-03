@@ -50,7 +50,7 @@
 - Most of my issues came from small syntax errors and import problems. I ran into things like missing curly braces, wrong file paths, missing exports, and forgetting that a component must return a single parent element. I had to fix these errors by reading the messages in the terminal and looking closely at the code. I debugged many times while getting the components to render together correctly. Working in App.tsx made it easier to see when components were not passing props properly.
 
 ## Special Thanks
-- I want to thank my instructors  and Bryan Santos for explaining props, destructuring, and how data moves from parent to child components. I need more practice, but their examples made it easier to understand why we type props and how to use them correctly in a component.
+- I want to thank my instructors Tishana Trainor and Bryan Santos for explaining props, destructuring, and how data moves from parent to child components. I need more practice, but their examples made it easier to understand why we type props and how to use them correctly in a component.
 
 # Getting Started
 
