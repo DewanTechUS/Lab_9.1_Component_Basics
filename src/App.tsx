@@ -1,6 +1,8 @@
 import { AlertBox } from "./components/AlertBox/AlertBox";
 import { UserProfileCard } from "./components/UserProfileCard/UserProfileCard";
 import { ProductDisplay } from "./components/ProductDisplay/ProductDisplay";
+// import './App.css';
+import './index.css';
 
 const App = () => {
 
@@ -49,7 +51,10 @@ const App = () => {
   return (
     <div className="p-6 space-y-6">
       
+      <AlertBox type="info" message="Student of Per Scholas-Dewan Mahmud 2025-RTT-57" />
+      
       <AlertBox type="success" message="This is a success message" />
+    
      
      {/* i was testing  here */}
       {/* <AlertBox type="error" message="This is an error message" />
@@ -58,12 +63,12 @@ const App = () => {
 
       {/* multiple users */}
       {users.map((user) => (
-        <UserProfileCard key={user.id} user={user} />
+        <UserProfileCard key={user.id} user={user} /> // added key prop here
       ))}
 
       {/* multiple products */}
       {products.map((product, index) => (
-        <ProductDisplay key={index} product={product} />
+        <ProductDisplay key={index} product={product} /> // using index as key since no id
       ))}
 
     </div>
