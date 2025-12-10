@@ -1,7 +1,6 @@
 // src/types/index.ts
 // copied from lesson component-library
 // This file contains TypeScript interfaces and types for various components in the component library.
-// i am confusing ts with react tsx syntax i need to practice more i think i am the most dumest person ever i think too much and over complicate things
 // https://ps-lms.vercel.app/curriculum/se/415/lab-1#:~:text=Component%20Implementation%3A
 // https://ps-lms.vercel.app/curriculum/se/415/lab-1#:~:text=Create%20a%20new%20React%20TypeScript%20project%20using%20Vite%3A
 // https://ps-lms.vercel.app/curriculum/se/415/lab-1#:~:text=index.ts-,Component%20Requirements,-1.%20AlertBox%20Component
